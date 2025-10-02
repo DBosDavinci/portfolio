@@ -41,7 +41,7 @@ export const title = tv({
 });
 
 export const subtitle = tv({
-  base: "w-full md:w-1/2 my-2 text-lg lg:text-xl text-default-600 block max-w-full",
+  base: "w-full md:w-1/2 my-2 text-lg lg:text-2xl text-default-600 block max-w-full font-bold",
   variants: {
     fullWidth: {
       true: "!w-full",
@@ -49,5 +49,25 @@ export const subtitle = tv({
   },
   defaultVariants: {
     fullWidth: true,
+  },
+});
+
+export const normalText = tv({
+  base: "text-base text-default-700",
+  variants: {
+    size: {
+      sm: "text-sm",
+      md: "text-base",
+      lg: "text-lg",
+    },
+    weight: {
+      normal: "font-normal",
+      medium: "font-medium",
+      bold: "font-bold",
+    },
+  },
+  defaultVariants: {
+    size: "md",
+    weight: "normal",
   },
 });
