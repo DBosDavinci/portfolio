@@ -1,0 +1,15 @@
+{
+    "Home": {
+        "title": "Daniel Bos Portfolio"
+    },
+    "About": {
+        "title": "About Me",
+        "sd": "Software developer",
+        "about_sd": "Hi! I'm Daniel, a fourth year software Developer. I specialise in making software that I enjoy and find interest in.",
+        "hobbies": "Hobbies",
+        "about_hobbies": "In my free time, I love to go for some physical activities like running or cycling."
+    },
+    "Projects": {
+        "title": "Projects"
+    }
+}

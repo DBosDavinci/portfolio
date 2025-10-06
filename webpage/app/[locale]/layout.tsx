@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
-import { Link } from "@heroui/link";
+import { NextIntlClientProvider } from 'next-intl';
 import clsx from "clsx";
 
 import { Providers } from "./providers";
@@ -45,7 +45,7 @@ export default function RootLayout({
           <div className="relative flex flex-col h-screen">
             <Navbar />
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
-              {children}
+              <NextIntlClientProvider>{children}</NextIntlClientProvider>
             </main>
             <footer className="w-full flex items-center justify-center py-3">
               <p>Daniel Bos 2025</p>
