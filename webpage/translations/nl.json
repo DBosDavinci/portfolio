@@ -1,0 +1,15 @@
+{
+    "Home": {
+        "title": "Daniel Bos Portfolio"
+    },
+    "About": {
+        "title": "Over Mij",
+        "sd": "Software developer",
+        "about_sd": "Hoi! Ik ben Daniel, een vierdejaars Software Developer. Ik specialiseer me in het maken van software waar ik plezier in heb en die me interesseert.",
+        "hobbies": "Hobbies",
+        "about_hobbies": "In mijn vrije tijd hou ik ervan om fysieke activiteiten te ondernemen, zoals hardlopen of fietsen."
+    },
+    "Projects": {
+        "title": "Projecten"
+    }
+}
