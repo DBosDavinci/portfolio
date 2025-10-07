@@ -1,23 +1,33 @@
 "use client";
 
+import React from "react";
 import {
   Navbar as HeroUINavbar,
   NavbarContent,
   NavbarItem,
 } from "@heroui/navbar";
+import {
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+  DropdownSection
+} from "@heroui/dropdown";
 import { link as linkStyles } from "@heroui/theme";
+import {
+  GithubIcon,
+  GlobeIcon
+} from "@/components/icons";
 import NextLink from "next/link";
 import clsx from "clsx";
-
-import {
-  GithubIcon
-} from "@/components/icons";
-
+import { useRouter, usePathname } from '@/i18n/navigation';
 import { siteConfig } from "@/config/site";
-import { usePathname } from "next/navigation";
-import { Link } from "@heroui/link";
+import { useTranslations } from "next-intl";
 
 export const Navbar = () => {
+  const t = useTranslations('Navbar');
+  const router = useRouter();
+  const pathname = usePathname();
 
   return (
     <HeroUINavbar maxWidth="xl" position="sticky">
@@ -40,9 +50,22 @@ export const Navbar = () => {
         </ul>
       </NavbarContent>
       <NavbarContent className="basis-3/5 sm:basis-full" justify="end">
-        <Link isExternal href="https://github.com/DBosDavinci">
+        <Dropdown>
+          <DropdownTrigger>
+            <GlobeIcon />
+          </DropdownTrigger>
+          <DropdownMenu onAction={(key) => {
+            router.replace(pathname, { locale: key.toString() });
+          }}>
+            <DropdownSection title={t('languages')}>
+              <DropdownItem key={'nl'}>{t('dutch')}</DropdownItem>
+              <DropdownItem key={'en'}>{t('english')}</DropdownItem>
+            </DropdownSection>
+          </DropdownMenu>
+        </Dropdown>
+        <NextLink href="https://github.com/DBosDavinci">
           <GithubIcon className="text-default-500" />
-        </Link>
+        </NextLink>
       </NavbarContent>
     </HeroUINavbar>
   );

@@ -1,4 +1,9 @@
 {
+    "Navbar": {
+        "languages": "Talen",
+        "dutch": "Nederlands",
+        "english": "Engels"
+    },
     "Home": {
         "title": "Daniel Bos Portfolio"
     },
