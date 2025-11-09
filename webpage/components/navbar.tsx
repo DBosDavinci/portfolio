@@ -55,7 +55,7 @@ export const Navbar = () => {
             <GlobeIcon />
           </DropdownTrigger>
           <DropdownMenu onAction={(key) => {
-            router.replace(pathname, { locale: key.toString() });
+            router.push(pathname, { locale: key.toString() });
           }}>
             <DropdownSection title={t('languages')}>
               <DropdownItem key={'nl'}>{t('dutch')}</DropdownItem>
