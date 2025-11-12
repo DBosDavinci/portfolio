@@ -52,7 +52,7 @@ export const Navbar = () => {
       <NavbarContent className="basis-3/5 sm:basis-full" justify="end">
         <Dropdown>
           <DropdownTrigger>
-            <GlobeIcon />
+            <GlobeIcon className="cursor-pointer" />
           </DropdownTrigger>
           <DropdownMenu onAction={(key) => {
             router.push(pathname, { locale: key.toString() });

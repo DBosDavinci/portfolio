@@ -1,5 +1,5 @@
 import { GithubIcon } from "@/components/icons";
-import { subtitle, title } from "@/components/primitives";
+import { normalText, subtitle, title } from "@/components/primitives";
 import { Card } from "@heroui/card";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -19,6 +19,7 @@ export default function ProjectsPage() {
             <GithubIcon className="text-default-500 w-6 h-6" />
           </NextLink>
         </div>
+        <p className={normalText({ size: "sm" })}>{t('projects_pizero2wwebpage')}</p>
       </Card>
 
       <Card className="mt-6 p-6">
@@ -28,6 +29,7 @@ export default function ProjectsPage() {
             <GithubIcon className="text-default-500 w-6 h-6" />
           </NextLink>
         </div>
+        <p className={normalText({ size: "sm" })}>{t('projects_pizero2wremote')}</p>
         <Image
           src="/images/pizero2w.jpg"
           alt="Pi zero 2w remote"
@@ -43,6 +45,7 @@ export default function ProjectsPage() {
             <GithubIcon className="text-default-500 w-6 h-6" />
           </NextLink>
         </div>
+        <p className={normalText({ size: "sm" })}>{t('projects_jukebox')}</p>
         <Image
           src="/images/jukebox.jpg"
           alt="Jukebox"
@@ -58,6 +61,7 @@ export default function ProjectsPage() {
             <GithubIcon className="text-default-500 w-6 h-6" />
           </NextLink>
         </div>
+        <p className={normalText({ size: "sm" })}>{t('projects_gameplanner')}</p>
         <Image
           src="/images/gameplanner.jpg"
           alt="Gameplanner"
@@ -73,6 +77,7 @@ export default function ProjectsPage() {
             <GithubIcon className="text-default-500 w-6 h-6" />
           </NextLink>
         </div>
+        <p className={normalText({ size: "sm" })}>{t('projects_pokemon')}</p>
         <Image
           src="/images/PokemonBattleSim.jpg"
           alt="Pokemon battle simulator"
