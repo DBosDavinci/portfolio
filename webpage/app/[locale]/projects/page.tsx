@@ -10,9 +10,11 @@ export default function ProjectsPage() {
     <div>
       <h1 className={title()}>{t("title")}</h1>
 
-      <ProjectCard title="Pi zero 2w webpage" gitlink="https://github.com/iSniper27/pi-zero-web-app" translations={t("projects_pizero2wwebpage")} />
+      <ProjectCard title="Kensan Fischertechnikplant" gitlink="https://github.com/1xfaygo/Kensan-Ombouw-fischertechnikplant-Project" translations={t("projects_kensan")} image="kensan.jpg" />
 
-      <ProjectCard title="Pi zero 2w remote" gitlink="https://github.com/iSniper27/pizero2w" translations={t("projects_pizero2wremote")} image="pizero2w.jpg" />
+      <ProjectCard title="Pi zero 2w webpage" gitlink="https://github.com/DBosDavinci/pi-zero-web-app" translations={t("projects_pizero2wwebpage")} image="pizero2wwebpage.jpg" />
+
+      <ProjectCard title="Pi zero 2w remote" gitlink="https://github.com/DBosDavinci/pizero2w" translations={t("projects_pizero2wremote")} image="pizero2w.jpg" />
 
       <ProjectCard title="Jukebox" gitlink="https://github.com/DBosDavinci/jukebox" translations={t("projects_jukebox")} image="jukebox.jpg" />
 

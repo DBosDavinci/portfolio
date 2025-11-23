@@ -6,6 +6,7 @@ import { subtitle } from "./primitives";
 import { GithubIcon } from "./icons";
 import Image from "next/image";
 import NextLink from "next/link";
+import { Bars3Icon } from '@heroicons/react/24/solid';
 import { useDisclosure } from "@heroui/modal";
 import ProjectPopup from "./projectPopup";
 
@@ -20,11 +21,11 @@ export default function ProjectCard({ title, gitlink, translations, image }: { t
                     <h2 className={subtitle({ fullWidth: false })}>
                         {title}
                     </h2>
-                    <NextLink href={gitlink}>
-                        <GithubIcon className="text-default-500 w-6 h-6" />
-                    </NextLink>
-                    <Button isIconOnly onPress={onOpen}>
-                        <GithubIcon className="text-default-500 w-6 h-6" />
+                    <Button href={gitlink} isIconOnly as={NextLink} target="_blank" rel="noopener noreferrer">
+                        <GithubIcon className="w-6 h-6" />
+                    </Button>
+                    <Button onPress={onOpen} isIconOnly>
+                        <Bars3Icon className="w-6 h-6" />
                     </Button>
                 </div>
                 {image && (

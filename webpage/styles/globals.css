@@ -2,6 +2,8 @@
 
 @config "../tailwind.config.js";
 
-html {
-    scrollbar-gutter: stable;
+@layer base {
+    html {
+        @apply bg-background text-foreground;
+    }
 }
