@@ -14,7 +14,9 @@ export interface ProvidersProps {
 export function Providers({ children, themeProps }: ProvidersProps) {
   return (
     <HeroUIProvider>
-      <NextThemesProvider {...themeProps}>{children}</NextThemesProvider>
+      <NextThemesProvider {...themeProps} disableTransitionOnChange>
+        {children}
+      </NextThemesProvider>
     </HeroUIProvider>
   );
 }
