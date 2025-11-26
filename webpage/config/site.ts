@@ -2,7 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: "Portfolio",
-  description: "Make beautiful websites regardless of your design experience.",
+  description: "Daniel Bos portfolio 2025.",
   navItems: [
     {
       label: "Home",
@@ -16,6 +16,5 @@ export const siteConfig = {
       label: "Projects",
       href: "/projects",
     }
-  ],
-  navMenuItems: [],
+  ]
 };

@@ -1,5 +1,5 @@
 import "@/styles/globals.css";
-import { Metadata, Viewport } from "next";
+import { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import clsx from "clsx";
 
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html suppressHydrationWarning>
+    <html suppressHydrationWarning className="dark">
       <head />
       <body
         className={clsx(
@@ -30,19 +30,19 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           fontSans.variable,
         )}
       >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col h-screen">
-            <NextIntlClientProvider>
+        <div className="relative flex flex-col h-screen">
+          <NextIntlClientProvider>
+            <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
               <Navbar />
               <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
                 {children}
               </main>
-            </NextIntlClientProvider>
-            <footer className="w-full flex items-center justify-center py-3">
-              <p>Daniel Bos 2025</p>
-            </footer>
-          </div>
-        </Providers>
+              <footer className="w-full flex items-center justify-center py-3">
+                <p>Daniel Bos 2025</p>
+              </footer>
+            </Providers>
+          </NextIntlClientProvider>
+        </div>
       </body>
     </html>
   );
