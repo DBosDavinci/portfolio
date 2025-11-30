@@ -61,7 +61,7 @@ export const Navbar = () => {
             </DropdownSection>
           </DropdownMenu>
         </Dropdown>
-        <NextLink href="https://github.com/DBosDavinci">
+        <NextLink href="https://github.com/DBosDavinci" target="_blank" rel="noopener noreferrer">
           <GithubIcon className="text-default-500" />
         </NextLink>
       </NavbarContent>
