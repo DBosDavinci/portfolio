@@ -26,23 +26,23 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <head />
       <body
         className={clsx(
-          "min-h-screen text-foreground bg-background font-sans antialiased",
+          "min-h-screen text-foreground bg-background font-sans antialiased overflow-y-scroll scroll-smooth",
           fontSans.variable,
         )}
       >
-        <div className="relative flex flex-col h-screen">
-          <NextIntlClientProvider>
-            <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+        <NextIntlClientProvider>
+          <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+            <div className="relative flex flex-col min-h-screen">
               <Navbar />
               <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
                 {children}
               </main>
-              <footer className="w-full flex items-center justify-center py-3">
-                <p>Daniel Bos 2025</p>
+              <footer className="w-full flex items-center justify-center py-3 mt-auto">
+                <p>Daniel Bos 2026</p>
               </footer>
-            </Providers>
-          </NextIntlClientProvider>
-        </div>
+            </div>
+          </Providers>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

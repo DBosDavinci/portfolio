@@ -24,6 +24,7 @@ export default function ProjectPopup({ open, onOpenChange, title, translations, 
                     </p>
                     {image && (
                         <Image
+                            className="m-auto mt-4 mb-4 border-1 border-white rounded-lg"
                             alt={title}
                             height={300}
                             src={`/images/${image}`}

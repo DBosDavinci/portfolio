@@ -12,7 +12,9 @@
         "sd": "Software developer",
         "about_sd": "Hi! I'm Daniel, a fourth year software Developer. I like making software that I enjoy and find interest in. I want to specialise in working with robots and sensors and visualising these and using AI to predict future data. For this reason, I am currently working on a project at Kensan where I am involved in automating a small-scale factory and providing a visualisation for it.",
         "hobbies": "Hobbies",
-        "about_hobbies": "In my free time, I love to go for some physical activities like running or cycling. Lately, I have started liking traveling and discovering new places more and more. I enjoy experiencing new cultures and immersing myself in them by learning new languages and seeing places I would normally never get to see through games like Geoguessr."
+        "about_hobbies": "In my free time, I love to go for some physical activities like running or cycling. Lately, I have started liking traveling and discovering new places more and more. I enjoy experiencing new cultures and immersing myself in them by learning new languages and seeing places I would normally never get to see through games like Geoguessr.",
+        "skills": "Skills",
+        "about_skills": "Below are listed various programming languages, frameworks and tools that I have experience with."
     },
     "Projects": {
         "title": "Projects",
