@@ -30,6 +30,7 @@ export default function ProjectCard({ title, gitlink, translations, image }: { t
                 </div>
                 {image && (
                     <Image
+                        className="mt-4 border-1 border-white rounded-lg"
                         alt={title}
                         height={300}
                         src={`/images/${image}`}
